@@ -1,0 +1,31 @@
+{
+  "name": "account_management_api",
+  "version": "1.0.0",
+  "description": "API for managing an account",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node dist/src/server.js\"",
+    "test": "jest --passWithNoTests --runInBand --no-cache",
+    "start": "tsc && node dist/src/server.js"
+  },
+  "author": "Emerson Laranja",
+  "engines": {
+    "node": "20.8.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.12",
+    "jest": "^29.7.0",
+    "sqlite3": "^5.1.7",
+    "ts-jest": "^29.1.4",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  }
+}
